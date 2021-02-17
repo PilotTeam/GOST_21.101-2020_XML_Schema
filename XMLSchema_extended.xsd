@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Package">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Project">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="Attributes">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:any processContents="skip" minOccurs="0" maxOccurs="unbounded"/>
+									</xs:sequence>	
+								</xs:complexType>
+							</xs:element>
+							<xs:element ref="Children" minOccurs = "1" maxOccurs = "1"/>	
+						</xs:all>
+						<xs:attribute name="Id" type="xs:string" use="required"/>	
+						<xs:anyAttribute processContents="lax"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:all>
+			<xs:anyAttribute processContents="lax"/>
+		</xs:complexType>	
+	</xs:element>	
+
+	
+	<xs:element name="Children" >
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="Folder"/>
+				<xs:element ref="Document" />
+			</xs:choice>	
+		</xs:complexType>
+	</xs:element>
+	
+    <xs:element name="EcmChildren" >
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="Folder"/>
+				<xs:element ref="Document" />
+			</xs:choice>	
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="Folder" >
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Attributes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Attribute" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>	
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="Children" minOccurs = "0" maxOccurs = "1"/>
+				<xs:element name="Relations" minOccurs = "0" maxOccurs = "1"/>
+			</xs:all>
+			<xs:attribute name="Id" type="xs:string" use="required"/>	
+			<xs:attribute name ="Type" use="required"/>
+			<xs:anyAttribute processContents="lax"/>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="Document" >
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Attributes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Attribute" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>	
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="Children" minOccurs = "0" maxOccurs = "1"/>
+				<xs:element ref="EcmChildren" minOccurs = "0" maxOccurs = "1"/>
+				<xs:element name="Relations" minOccurs = "0" maxOccurs = "1"/>
+				<xs:element name="FileNames" minOccurs = "0" maxOccurs = "1"/>
+			</xs:all>
+			<xs:attribute name="Created" type="xs:string" use="required"/>	
+			<xs:attribute name="Id" type="xs:string" use="required"/>	
+			<xs:attribute name="FileName" type="xs:string" use="required"/>	
+		<xs:anyAttribute processContents="lax"/>
+		</xs:complexType>
+	</xs:element>
+	
+
+	
+</xs:schema>
+
+
+
+

@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Created="2021-02-17T15:11:36" Organization="ООО Горгражданпроект">
+  <Project TypeName="Project" Id="a463f522-a3de-4544-9a4c-76cabda6dc3d" ParentId="88dfed13-f1a0-4735-b1fc-55a71743ea5b" IsHelperObject="false">
+    <Attributes>
+      <Attribute Name="Code" Value="28545" />
+      <Attribute Name="ProjectName" Value="Проект 1" />
+    </Attributes>
+    <Children>
+      <Folder TypeName="Section" Id="88cedddf-6665-4999-96ff-b79b64c2d763" ParentId="a463f522-a3de-4544-9a4c-76cabda6dc3d" Type="Section">
+        <Attributes>
+          <Attribute Name="Number" Value="3" />
+          <Attribute Name="Title" Value="Архитектурные решения" />
+          <Attribute Name="Code" Value="АР" />
+        </Attributes>
+        <Children>
+          <Document TypeName="Document" Id="669c74dc-b473-4d2d-8d3d-a7969d3b5d87" ParentId="88cedddf-6665-4999-96ff-b79b64c2d763" Created="2021-02-07T12:00:15" FileName="3 - Архитектурные решения\1 - План на отм. 0.000 - Чертеж.xps" IsCreateSnapshot="true" SnapshotReason="">
+            <Attributes>
+              <Attribute Name="Sheet" Value="1" />
+              <Attribute Name="DocumentName" Value="План на отм. 0.000" />
+              <Attribute Name="Code" Value="28545-АР" />
+              <Attribute Name="document_type" Value="Чертеж" />
+            </Attributes>
+          </Document>
+          <Document TypeName="Document" Id="cef38b1d-358f-400f-8d2d-b742e7c9d394" ParentId="88cedddf-6665-4999-96ff-b79b64c2d763" Created="2021-02-07T12:01:13" FileName="3 - Архитектурные решения\2 - План на отм. +3.700 - Чертеж.xps" IsCreateSnapshot="true" SnapshotReason="">
+            <Attributes>
+              <Attribute Name="Sheet" Value="2" />
+              <Attribute Name="DocumentName" Value="План на отм. +3.700" />
+              <Attribute Name="Code" Value="28545-АР" />
+              <Attribute Name="document_type" Value="Чертеж" />
+            </Attributes>
+          </Document>
+        </Children>
+      </Folder>
+      <Folder TypeName="Section" Id="822e59eb-b22b-40ba-b130-65d4e2d6db8d" ParentId="a463f522-a3de-4544-9a4c-76cabda6dc3d" Type="Section">
+        <Attributes>
+          <Attribute Name="Number" Value="4" />
+          <Attribute Name="Title" Value="Конструктивные и объемно-планировочные решения" />
+          <Attribute Name="Code" Value="КР" />
+        </Attributes>
+        <Children>
+          <Document TypeName="Document" Id="ec6208dd-67ff-4b1c-a387-d1fe4ec26846" ParentId="822e59eb-b22b-40ba-b130-65d4e2d6db8d" Created="2021-02-07T12:04:10" FileName="4 - Конструктивные и объемно-планировоч~\1 - План на отм. 0.000 - Чертеж.xps" IsCreateSnapshot="true" SnapshotReason="">
+            <Attributes>
+              <Attribute Name="Sheet" Value="1" />
+              <Attribute Name="DocumentName" Value="План на отм. 0.000" />
+              <Attribute Name="Code" Value="28545-КР" />
+              <Attribute Name="document_type" Value="Чертеж" />
+            </Attributes>
+          </Document>
+        </Children>
+      </Folder>
+      <Folder TypeName="_sourceFiles" Id="00000000-0000-0000-0000-000000000000" ParentId="a463f522-a3de-4544-9a4c-76cabda6dc3d" Type="_sourceFiles">
+        <Attributes />
+        <Children>
+          <Document TypeName="File" Id="cb89f6f2-b990-40f2-8473-85bcb43ebb13" ParentId="a463f522-a3de-4544-9a4c-76cabda6dc3d" Created="2021-02-07T09:52:18" FileName="_sourceFiles\28545-АР.cdw" IsCreateSnapshot="true" SnapshotReason="">
+            <Attributes>
+              <Attribute Name="Title 4C281306-E329-423A-AF45-7B39EC30273F" Value="28545-АР.cdw" />
+            </Attributes>
+            <Relations>
+              <Key>SourceFiles</Key>
+              <Value>cef38b1d-358f-400f-8d2d-b742e7c9d394</Value>
+            </Relations>
+          </Document>
+          <Document TypeName="File" Id="80d91886-1582-4012-9fb4-66c214881f9f" ParentId="a463f522-a3de-4544-9a4c-76cabda6dc3d" Created="2021-02-07T12:03:23" FileName="_sourceFiles\28545-КР.cdw" IsCreateSnapshot="true" SnapshotReason="">
+            <Attributes>
+              <Attribute Name="Title 4C281306-E329-423A-AF45-7B39EC30273F" Value="28545-КР.cdw" />
+            </Attributes>
+            <Relations>
+              <Key>SourceFiles</Key>
+              <Value>ec6208dd-67ff-4b1c-a387-d1fe4ec26846</Value>
+            </Relations>
+          </Document>
+          <Document TypeName="File" Id="13122ba6-5d0b-4137-94f1-038b56e5512d" ParentId="a463f522-a3de-4544-9a4c-76cabda6dc3d" Created="2021-02-17T12:09:08" FileName="_sourceFiles\Arch.ifc" IsCreateSnapshot="true" SnapshotReason="">
+            <Attributes>
+              <Attribute Name="Title 4C281306-E329-423A-AF45-7B39EC30273F" Value="Arch.ifc" />
+            </Attributes>
+            <Relations>
+              <Key>SourceFiles</Key>
+              <Value>380daad5-dc35-42d2-9836-916ab2de9774</Value>
+            </Relations>
+          </Document>
+          <Document TypeName="File" Id="6d3e63b6-e425-4f60-879d-59c9e20f27ef" ParentId="a463f522-a3de-4544-9a4c-76cabda6dc3d" Created="2021-02-17T12:08:55" FileName="_sourceFiles\Arch.rnp" IsCreateSnapshot="true" SnapshotReason="">
+            <Attributes>
+              <Attribute Name="Title 4C281306-E329-423A-AF45-7B39EC30273F" Value="Arch.rnp" />
+            </Attributes>
+          </Document>
+        </Children>
+      </Folder>
+    </Children>
+  </Project>
+</Package>
